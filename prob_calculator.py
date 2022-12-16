@@ -8,7 +8,7 @@ class Hat:
 
     def draw(self, n):
         numb = min(n, len(self.contents))
-        return [self.contents.pop(random.randrange(len(self.contents))) for _ in range(numb)]
+        return [self.contents.pop(random.randrange(len(self.contents)+1)) for _ in range(numb)]
 
 
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
